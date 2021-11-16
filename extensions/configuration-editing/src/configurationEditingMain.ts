@@ -121,6 +121,7 @@ vscode.languages.registerDocumentSymbolProvider({ pattern: '**/launch.json', lan
 			onLiteralValue: (value: any, _offset: number, _length: number) => {
 				if (lastProperty === 'name') {
 					name = value;
+					name = 'test';
 				}
 			},
 			onObjectBegin: (offset: number, _length: number) => {
